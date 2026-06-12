@@ -1,0 +1,105 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: #1a1a1a;
+}
+
+.btn-primary {
+  background-color: hsl(20, 30%, 35%);
+  border-color: hsl(20, 30%, 35%);
+}
+.btn-primary:hover, .btn-primary:focus {
+  background-color: hsl(20, 30%, 27%);
+  border-color: hsl(20, 30%, 27%);
+}
+
+.hero {
+  background-color: hsl(20, 30%, 35%);
+  min-height: 60vh;
+}
+.hero .hero__title {
+  color: hsl(40, 30%, 90%);
+  font-weight: 700;
+  font-size: 2rem;
+}
+@media (min-width: 768px) {
+  .hero .hero__title {
+    font-size: 2.5rem;
+  }
+}
+.hero .hero__subtitle {
+  color: hsl(40, 30%, 90%);
+  font-weight: 300;
+  max-width: 600px;
+  margin-inline: auto;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.hero .hero__cta {
+  --bs-btn-bg: transparent;
+  --bs-btn-border-color: transparent;
+  --bs-btn-color: hsl(40, 30%, 90%);
+  --bs-btn-hover-bg: hsl(20, 20%, 15%);
+  --bs-btn-hover-border-color: hsl(20, 20%, 15%);
+  --bs-btn-hover-color: hsl(40, 30%, 90%);
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+
+#servizi .card {
+  box-shadow: 2px 2px 8px rgba(128, 128, 128, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+#servizi .card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+#mainNavbar {
+  background-color: hsl(20, 20%, 15%);
+}
+#mainNavbar .atelier-logo {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: hsl(40, 30%, 90%);
+  letter-spacing: 0.08em;
+}
+#mainNavbar .navbar-toggler {
+  padding: 0.25rem 0.4rem;
+  border: 1px solid rgba(237.15, 232.05, 221.85, 0.4);
+}
+#mainNavbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+#mainNavbar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(240,225,205,0.85)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+#mainNavbar .nav-link {
+  color: rgba(237.15, 232.05, 221.85, 0.8);
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+#mainNavbar .nav-link:hover, #mainNavbar .nav-link.active {
+  color: hsl(40, 30%, 90%);
+}
+@media (max-width: 767.98px) {
+  #mainNavbar .navbar-collapse {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  #mainNavbar .nav-link {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+}
+#mainNavbar .btn-outline-light {
+  color: hsl(40, 30%, 90%);
+  border-color: rgba(237.15, 232.05, 221.85, 0.4);
+  font-size: 0.85rem;
+  padding: 0.25rem 0.5rem;
+  line-height: 1;
+}
+#mainNavbar .btn-outline-light:hover {
+  background-color: rgba(237.15, 232.05, 221.85, 0.1);
+  border-color: hsl(40, 30%, 90%);
+  color: hsl(40, 30%, 90%);
+}/*# sourceMappingURL=style.css.map */

@@ -105,8 +105,56 @@
       </template>
     </section>
 
-    <section id="contatti">
-      <!-- Form contatti Bootstrap, larghezza limitata e centrata -->
+    <section id="contatti" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Contattaci</h2>
+          <p>Compila il form, ti rispondiamo entro 48 ore.</p>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-8 col-lg-6 mx-auto">
+            <form>
+              <div class="mb-3">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="nome" name="nome" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="tipoProgetto" class="form-label"
+                  >Tipo di progetto</label
+                >
+                <select
+                  class="form-select"
+                  id="tipoProgetto"
+                  name="tipo_progetto"
+                >
+                  <option value="residenziale">Residenziale</option>
+                  <option value="interior">Interior design</option>
+                  <option value="ristrutturazione">Ristrutturazione</option>
+                </select>
+              </div>
+              <div class="mb-4">
+                <label for="messaggio" class="form-label">Messaggio</label>
+                <textarea
+                  class="form-control"
+                  id="messaggio"
+                  name="messaggio"
+                  rows="4"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">Invia</button>
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
 
     <footer>

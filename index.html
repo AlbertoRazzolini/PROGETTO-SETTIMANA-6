@@ -19,13 +19,22 @@
             <h1 class="atelier-logo mb-0">Atelier</h1>
           </a>
 
-          <!-- Mobile: theme toggle + hamburger (nascosti su md+) -->
-          <div class="d-flex align-items-center gap-2 ms-auto d-md-none">
-            <button class="btn btn-outline-light btn-sm" id="themeToggleMob" aria-label="Cambia tema">
+          <!-- Nav collassabile -->
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto align-items-md-center gap-md-1">
+              <li class="nav-item"><a class="nav-link" href="#studio">Studio</a></li>
+              <li class="nav-item"><a class="nav-link" href="#servizi">Servizi</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contatti">Contatti</a></li>
+            </ul>
+          </div>
+
+          <!-- Theme toggle (sempre visibile) + hamburger (solo mobile) -->
+          <div class="d-flex align-items-center gap-2">
+            <button class="btn btn-outline-light btn-sm" id="themeToggle" aria-label="Cambia tema">
               <i class="bi bi-moon"></i>
             </button>
             <button
-              class="navbar-toggler"
+              class="navbar-toggler d-md-none"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#mainNav"
@@ -35,21 +44,6 @@
             >
               <span class="navbar-toggler-icon"></span>
             </button>
-          </div>
-
-          <!-- Nav collassabile -->
-          <div class="collapse navbar-collapse" id="mainNav">
-            <ul class="navbar-nav ms-auto align-items-md-center gap-md-1">
-              <li class="nav-item"><a class="nav-link" href="#studio">Studio</a></li>
-              <li class="nav-item"><a class="nav-link" href="#servizi">Servizi</a></li>
-              <li class="nav-item"><a class="nav-link" href="#contatti">Contatti</a></li>
-              <!-- Theme toggle desktop: visibile solo su md+ -->
-              <li class="nav-item d-none d-md-flex align-items-center ms-2">
-                <button class="btn btn-outline-light btn-sm" id="themeToggleDesk" aria-label="Cambia tema">
-                  <i class="bi bi-moon"></i>
-                </button>
-              </li>
-            </ul>
           </div>
 
         </div>

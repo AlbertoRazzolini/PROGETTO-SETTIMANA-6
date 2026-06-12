@@ -20,6 +20,53 @@ themeToggle.addEventListener("click", () => {
 });
 
 // ============================================================
+// VALIDAZIONE FORM
+// ============================================================
+const contattiForm = document.querySelector('#contatti form');
+
+contattiForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  const nome = document.getElementById('nome');
+  const email = document.getElementById('email');
+  const tipoProgetto = document.getElementById('tipoProgetto');
+  const messaggio = document.getElementById('messaggio');
+  let valido = true;
+
+  if (nome.value.trim() === '') {
+    nome.classList.add('is-invalid');
+    valido = false;
+  } else {
+    nome.classList.remove('is-invalid');
+  }
+
+  if (!email.value.includes('@') || email.value.trim() === '') {
+    email.classList.add('is-invalid');
+    valido = false;
+  } else {
+    email.classList.remove('is-invalid');
+  }
+
+  if (tipoProgetto.value === '') {
+    tipoProgetto.classList.add('is-invalid');
+    valido = false;
+  } else {
+    tipoProgetto.classList.remove('is-invalid');
+  }
+
+  if (messaggio.value.trim().length < 20) {
+    messaggio.classList.add('is-invalid');
+    valido = false;
+  } else {
+    messaggio.classList.remove('is-invalid');
+  }
+
+  if (valido) {
+    contattiForm.reset();
+  }
+});
+
+// ============================================================
 // SERVIZI
 // ============================================================
 const servizi = [

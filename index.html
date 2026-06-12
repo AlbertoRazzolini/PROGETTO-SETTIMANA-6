@@ -53,7 +53,7 @@
           <div class="collapse navbar-collapse" id="mainNav">
             <ul class="navbar-nav ms-auto align-items-md-center gap-md-1">
               <li class="nav-item">
-                <a class="nav-link" href="#studio">Studio</a>
+                <a class="nav-link" href="#">Studio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#servizi">Servizi</a>
@@ -165,39 +165,28 @@
             <form>
               <div class="mb-3">
                 <label for="nome" class="form-label">Nome</label>
-                <input type="text" class="form-control" id="nome" name="nome" />
+                <input type="text" class="form-control" id="nome" name="nome" placeholder="Inserisci il tuo nome" />
+                <div class="invalid-feedback">Inserisci il tuo nome.</div>
               </div>
               <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  name="email"
-                />
+                <input type="email" class="form-control" id="email" name="email" placeholder="Inserisci la tua email" />
+                <div class="invalid-feedback">Inserisci un indirizzo email valido con @.</div>
               </div>
               <div class="mb-3">
-                <label for="tipoProgetto" class="form-label"
-                  >Tipo di progetto</label
-                >
-                <select
-                  class="form-select"
-                  id="tipoProgetto"
-                  name="tipo_progetto"
-                >
+                <label for="tipoProgetto" class="form-label">Tipo di progetto</label>
+                <select class="form-select" id="tipoProgetto" name="tipo_progetto">
+                  <option value="" disabled selected></option>
                   <option value="residenziale">Residenziale</option>
                   <option value="interior">Interior design</option>
                   <option value="ristrutturazione">Ristrutturazione</option>
                 </select>
+                <div class="invalid-feedback">Seleziona un tipo di progetto.</div>
               </div>
               <div class="mb-4">
                 <label for="messaggio" class="form-label">Messaggio</label>
-                <textarea
-                  class="form-control"
-                  id="messaggio"
-                  name="messaggio"
-                  rows="4"
-                ></textarea>
+                <textarea class="form-control" id="messaggio" name="messaggio" rows="4" placeholder="Descrivi il tuo progetto o la tua richiesta in almeno 20 caratteri..."></textarea>
+                <div class="invalid-feedback">Il messaggio deve contenere almeno 20 caratteri.</div>
               </div>
               <button type="submit" class="btn btn-primary w-100">Invia</button>
             </form>
@@ -273,7 +262,12 @@
         <div class="modal-content">
           <div class="modal-header border-0">
             <h5 class="modal-title fw-bold" id="servizioModalTitolo"></h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Chiudi"></button>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Chiudi"
+            ></button>
           </div>
           <div class="modal-body pt-0 text-center">
             <div class="fs-1 mb-3" id="servizioModalIcona"></div>

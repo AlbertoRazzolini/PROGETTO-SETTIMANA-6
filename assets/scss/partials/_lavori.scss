@@ -1,7 +1,6 @@
-@use 'variabili' as myVariables;
 @use 'mixin' as myMixins;
 
-#servizi {
+#lavori {
   .card {
     @include myMixins.card-hover();
   }

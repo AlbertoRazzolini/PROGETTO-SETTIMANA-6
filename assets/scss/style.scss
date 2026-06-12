@@ -1,13 +1,13 @@
 // Atelier — Week Project Settimana VI
 
-@use 'partials/variabili' as myVariables;
-@use 'partials/mixin' as myMixins;
+@use "partials/variabili" as myVariables;
+@use "partials/mixin" as myMixins;
 
 // ============================================================
 // BASE GLOBALE
 // ============================================================
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #1a1a1a;
 }
 
@@ -22,6 +22,44 @@ body {
   &:focus {
     background-color: myVariables.$brand-secondary-hover;
     border-color: myVariables.$brand-secondary-hover;
+  }
+}
+
+// ============================================================
+// HERO
+// ============================================================
+.hero {
+  background-color: myVariables.$brand-secondary;
+  min-height: 60vh;
+
+  .hero__title {
+    color: myVariables.$text-light;
+    font-weight: 700;
+    font-size: 2rem;
+
+    @media (min-width: 768px) {
+      font-size: 2.5rem;
+    }
+  }
+
+  .hero__subtitle {
+    color: myVariables.$text-light;
+    font-weight: 300;
+    max-width: 600px;
+    margin-inline: auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .hero__cta {
+    --bs-btn-bg: transparent;
+    --bs-btn-border-color: transparent;
+    --bs-btn-color: #{myVariables.$text-light};
+    --bs-btn-hover-bg: #{myVariables.$brand-primary};
+    --bs-btn-hover-border-color: #{myVariables.$brand-primary};
+    --bs-btn-hover-color: #{myVariables.$text-light};
+    font-size: 1.15rem;
+    font-weight: 500;
   }
 }
 

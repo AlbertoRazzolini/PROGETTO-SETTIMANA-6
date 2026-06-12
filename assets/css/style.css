@@ -12,6 +12,39 @@ body {
   border-color: hsl(20, 30%, 27%);
 }
 
+.hero {
+  background-color: hsl(20, 30%, 35%);
+  min-height: 60vh;
+}
+.hero .hero__title {
+  color: hsl(40, 30%, 90%);
+  font-weight: 700;
+  font-size: 2rem;
+}
+@media (min-width: 768px) {
+  .hero .hero__title {
+    font-size: 2.5rem;
+  }
+}
+.hero .hero__subtitle {
+  color: hsl(40, 30%, 90%);
+  font-weight: 300;
+  max-width: 600px;
+  margin-inline: auto;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.hero .hero__cta {
+  --bs-btn-bg: transparent;
+  --bs-btn-border-color: transparent;
+  --bs-btn-color: hsl(40, 30%, 90%);
+  --bs-btn-hover-bg: hsl(20, 20%, 15%);
+  --bs-btn-hover-border-color: hsl(20, 20%, 15%);
+  --bs-btn-hover-color: hsl(40, 30%, 90%);
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+
 #mainNavbar {
   background-color: hsl(20, 20%, 15%);
 }

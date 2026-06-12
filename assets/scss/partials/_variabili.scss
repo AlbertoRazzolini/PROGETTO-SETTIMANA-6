@@ -1,0 +1,6 @@
+$brand-primary: hsl(20, 20%, 15%); // nav, footer
+$brand-secondary: hsl(20, 30%, 35%); // hero, bottoni
+$brand-secondary-hover: darken($brand-secondary, 8%); // hover bottoni
+$text-light: hsl(40, 30%, 90%); // testo su sfondi scuri
+$card-shadow-hover: 0 10px 24px rgba(0, 0, 0, 0.12);
+$radius-base: 0.375rem;

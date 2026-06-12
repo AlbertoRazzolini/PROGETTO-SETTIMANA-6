@@ -1,5 +1,5 @@
-@use 'variabili' as myVariables;
-@use 'mixin' as myMixins;
+@use '../variabili' as myVariables;
+@use '../mixin' as myMixins;
 
 #mainNavbar {
   background-color: myVariables.$brand-primary;

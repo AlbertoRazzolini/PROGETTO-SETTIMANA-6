@@ -1,6 +1,6 @@
-@use 'mixin' as myMixins;
+@use '../mixin' as myMixins;
 
-#lavori {
+#servizi {
   .card {
     @include myMixins.card-hover();
     cursor: pointer;

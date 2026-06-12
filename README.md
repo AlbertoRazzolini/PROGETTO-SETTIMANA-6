@@ -14,17 +14,19 @@ Sito web responsive mobile-first per uno studio di architettura fittizio, svilup
 
 ```
 assets/scss/
-  style.scss          ← manifest (@use only)
+  style.scss                  ← manifest (3 @use: variabili, mixin, components)
   partials/
-    _variabili.scss   ← colori brand, shadow, radius
-    _mixin.scss       ← dark-link(), card-hover()
-    _base.scss        ← body, .btn-primary override
-    _navbar.scss      ← sticky navbar, hamburger, theme toggle
-    _hero.scss        ← hero section
-    _servizi.scss     ← cards servizi
-    _lavori.scss      ← cards lavori + filtri
-    _contatti.scss    ← form contatti
-    _footer.scss      ← footer 3 colonne
+    _variabili.scss           ← colori brand, shadow, radius
+    _mixin.scss               ← dark-link(), card-hover()
+    _components.scss          ← sub-manifest dei componenti
+    components/
+      _base.scss              ← body, .btn-primary override
+      _navbar.scss            ← sticky navbar, hamburger, theme toggle
+      _hero.scss              ← hero section
+      _servizi.scss           ← cards servizi
+      _lavori.scss            ← cards lavori + filtri
+      _contatti.scss          ← form contatti
+      _footer.scss            ← footer 3 colonne
 ```
 
 ## Funzionalità

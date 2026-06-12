@@ -6,11 +6,5 @@
 @use 'partials/variabili' as myVariables;
 @use 'partials/mixin' as myMixins;
 
-// Componenti — ognuno scoped alla propria sezione
-@use 'partials/base';
-@use 'partials/navbar';
-@use 'partials/hero';
-@use 'partials/servizi';
-@use 'partials/lavori';
-@use 'partials/contatti';
-@use 'partials/footer';
+// Componenti — sub-manifest che carica tutti i componenti
+@use 'partials/components';

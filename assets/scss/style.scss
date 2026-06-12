@@ -1,7 +1,12 @@
 // Atelier — Week Project Settimana VI
+// Manifest: questo file non contiene stili.
+// Importa i partials in ordine e Sass li compila in un unico style.css.
 
+// Variabili e mixin — caricati per primi, disponibili a tutti i partials
 @use 'partials/variabili' as myVariables;
 @use 'partials/mixin' as myMixins;
+
+// Componenti — ognuno scoped alla propria sezione
 @use 'partials/base';
 @use 'partials/navbar';
 @use 'partials/hero';

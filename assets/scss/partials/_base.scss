@@ -1,0 +1,17 @@
+@use 'variabili' as myVariables;
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #1a1a1a;
+}
+
+.btn-primary {
+  background-color: myVariables.$brand-secondary;
+  border-color: myVariables.$brand-secondary;
+
+  &:hover,
+  &:focus {
+    background-color: myVariables.$brand-secondary-hover;
+    border-color: myVariables.$brand-secondary-hover;
+  }
+}

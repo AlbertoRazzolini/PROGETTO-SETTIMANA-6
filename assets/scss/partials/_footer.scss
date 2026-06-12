@@ -1,0 +1,42 @@
+@use 'variabili' as myVariables;
+@use 'mixin' as myMixins;
+
+footer {
+  background-color: myVariables.$brand-primary;
+
+  .footer__brand {
+    color: myVariables.$text-light;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.5rem;
+  }
+
+  .footer__heading {
+    color: myVariables.$text-light;
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+  }
+
+  p {
+    color: rgba(myVariables.$text-light, 0.7);
+    font-size: 0.9rem;
+  }
+
+  .footer__link {
+    @include myMixins.dark-link(0.7);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+
+  .footer__divider {
+    border-color: rgba(myVariables.$text-light, 0.15);
+  }
+
+  .footer__copyright {
+    color: rgba(myVariables.$text-light, 0.5);
+    font-size: 0.8rem;
+  }
+}

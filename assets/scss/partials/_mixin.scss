@@ -1,3 +1,11 @@
 @use 'variabili' as myVariables;
 
-// === Mixin ===
+@mixin dark-link($opacity: 0.8) {
+  color: rgba(myVariables.$text-light, $opacity);
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: myVariables.$text-light;
+  }
+}

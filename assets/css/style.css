@@ -45,6 +45,15 @@ body {
   font-weight: 500;
 }
 
+#servizi .card {
+  box-shadow: 2px 2px 8px rgba(128, 128, 128, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+#servizi .card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
 #mainNavbar {
   background-color: hsl(20, 20%, 15%);
 }
@@ -78,8 +87,8 @@ body {
     padding-bottom: 0.5rem;
   }
   #mainNavbar .nav-link {
-    padding-top: 0.55rem;
-    padding-bottom: 0.55rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
   }
 }
 #mainNavbar .btn-outline-light {

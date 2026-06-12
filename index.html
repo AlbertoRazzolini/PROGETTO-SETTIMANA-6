@@ -83,8 +83,26 @@
       </div>
     </section>
 
-    <section id="servizi">
-      <!-- 3 card servizi affiancate da md in su -->
+    <section id="servizi" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">I nostri servizi</h2>
+          <p>Tre aree di lavoro, una sola attenzione alla qualità.</p>
+        </div>
+        <div class="row g-4" id="serviziContainer"></div>
+      </div>
+
+      <template id="cardServizioTemplate">
+        <div class="col-12 col-md-4">
+          <div class="card border-0 text-center h-100">
+            <div class="card-body">
+              <div class="fs-1 mb-3 servizio__icona"></div>
+              <h3 class="card-title fw-bold servizio__titolo"></h3>
+              <p class="card-text servizio__descrizione"></p>
+            </div>
+          </div>
+        </div>
+      </template>
     </section>
 
     <section id="contatti">

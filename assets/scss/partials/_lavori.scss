@@ -3,5 +3,6 @@
 #lavori {
   .card {
     @include myMixins.card-hover();
+    cursor: pointer;
   }
 }
